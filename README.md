@@ -19,6 +19,19 @@ Include  `dist/console-log-geojson.js` in your project.
 NOT WORKING YET - npm install console-log-geojson
 ```
 
+For plain old script tags:
+
+```
+<script src="dist/console-log-geojson.min.js"></script>
+```
+
+To import into an ember app, add the following line to `ember-cli-build.js`:
+
+```
+app.import('node_modules/console-log-geojson/dist/console-log-geojson.min.js');
+
+```
+
 
 
 ## Example
