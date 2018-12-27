@@ -1,0 +1,88 @@
+<html>
+  <head>
+  </head>
+
+  <body>
+    <h1>console-log-geojson</h1>
+    <p>This example simply calls console.log() on various geojson Features and FeatureCollections. Open the console and you will see that console-log-geojson hijacks the logging and adds summary info and a link to geojson.io for each valid geojson logged. </p>
+
+    <script type="text/javascript" src="../dist/console-log-geojson.js"></script>
+    <script type="text/javascript">
+      const Feature = {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -74.00596618652344,
+              40.730088145502236
+            ],
+            [
+              -73.9760971069336,
+              40.730088145502236
+            ],
+            [
+              -73.9760971069336,
+              40.74387557651064
+            ],
+            [
+              -74.00596618652344,
+              40.74387557651064
+            ],
+            [
+              -74.00596618652344,
+              40.730088145502236
+            ]
+          ]
+        ]
+      }
+    }
+
+    console.log(Feature);
+
+    const FeatureCollection = {
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.99746894836426,
+          40.73085238215901
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.0105152130127,
+          40.70820611642559
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.99669647216797,
+          40.706148461723764
+        ]
+      }
+    }
+  ]
+}
+
+    console.log(FeatureCollection);
+    </script>
+  </body>
+
+</html>

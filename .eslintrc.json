@@ -1,0 +1,16 @@
+{
+  "extends": ["google"],
+  "env": {
+    "mocha": true,
+		"browser": true,
+    "node": true,
+    "jasmine": true
+  },
+  "globals": {},
+  "rules": {
+    "require-jsdoc": [0],
+    "space-before-blocks": [0],
+    "no-negated-condition": [0],
+    "comma-dangle": ["error", "never"]
+  }
+}
