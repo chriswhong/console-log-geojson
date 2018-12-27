@@ -6,6 +6,8 @@ Hijacks `console.log()` and checks for valid geoJSON.  If it exists, prints a si
 
 *MAJOR LIMITATION* console-log-geojson builds its geojson links by urlencoding the stringified geojson and passing it to geojson.io as a url parameter.  This will not work with large geojson.  I'd love your suggestions on how to get around this ([geojsonio-cli](https://github.com/mapbox/geojsonio-cli) uses github gists, but I don't think that will work without auth)
 
+Message me on twitter at @chris_whong if you have suggestions or want to contribute.
+
 
 ## Installation
 
