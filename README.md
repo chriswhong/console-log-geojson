@@ -2,15 +2,20 @@
 
 Hijacks `console.log()` and checks for valid geoJSON.  If it exists, prints a simple summary and a link to inspect/edit the geojson in geojson.io.
 
+<img width="1165" alt="labsapplicantmaps" src="https://user-images.githubusercontent.com/1833820/50461354-eaeb5800-094b-11e9-93a4-1bad90dc1294.png">
+
+*MAJOR LIMITATION* console-log-geojson builds its geojson links by urlencoding the stringified geojson and passing it to geojson.io as a url parameter.  This will not work with large geojson.  I'd love your suggestions on how to get around this ([geojsonio-cli](https://github.com/mapbox/geojsonio-cli) uses github gists, but I don't think that will work without auth)
+
+
 ## Installation
 
-> NOTE: This module is still under development! Use in production at your own risk!
-
-```
-npm install console-log-geojson
-```
+Clone this repo.
 
 Include  `dist/console-log-geojson.js` in your project.
+
+```
+NOT WORKING YET - npm install console-log-geojson
+```
 
 
 
