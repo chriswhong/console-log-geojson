@@ -29,7 +29,6 @@ To import into an ember app, add the following line to `ember-cli-build.js`:
 
 ```
 app.import('node_modules/console-log-geojson/dist/console-log-geojson.min.js');
-
 ```
 
 
